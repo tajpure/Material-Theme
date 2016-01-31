@@ -1,0 +1,16 @@
+<div class="mb-search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="<%= __('Search') %>">
+    <input type="hidden" name="q" value="site:<%- config.url.replace(/^https?:\/\//, '') %>">
+  </form>
+</div>
+<footer id="footer">
+	<span class="copyright">
+    &copy; 2012-<%= date(new Date(), 'YYYY') %> <%= config.author || config.title %><br>
+		The Theme modified from <a href="http://sanographix.github.io/tumblr/apollo/" target="_blank">Apollo</a> | 
+		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+	</span>
+	<!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+</footer>

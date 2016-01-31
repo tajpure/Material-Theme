@@ -1,0 +1,15 @@
+<div class="mobile-nav-panel">
+	<i class="icon-reorder icon-large"></i>
+</div>
+<header id="header">
+
+	<nav class="nav">
+		<ul>
+			<% for (var i in theme.menu){ %><li><a href="<%- theme.menu[i] %>"><%= i %></a></li><% } %>
+			<% if (theme.rss){ %><li><a href="<%- theme.rss %>"  class="nav-icon" title="RSS Feed">RSS</a></li><% } %>
+		</ul>
+	</nav>
+	<div id="search-form-wrap">
+		<%- search_form({button: '&#xF002;'}) %>
+	</div>
+</header>

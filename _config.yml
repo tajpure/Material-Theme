@@ -1,0 +1,14 @@
+# Header
+menu:
+  Home: /
+  Archives: /archives
+  About: /about
+rss: /atom.xml
+
+# Content
+excerpt_link: Read More
+fancybox: true
+
+# Miscellaneous
+google_analytics: tajpure@gmail.com
+favicon: /favicon.ico
