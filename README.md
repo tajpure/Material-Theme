@@ -1,1 +1,1 @@
-Hexo theme: \Material
+Hexo theme: Material
