@@ -1,7 +1,8 @@
 <div class="mobile-nav-panel">
 	<ul class="nav mdl-menu mdl-js-menu mdl-menu--bottom-left mdl-js-ripple-effect" for="menubtn">
-		<% for (var i in theme.menu){ %><li  class="mdl-menu__item"><a href="<%- theme.menu[i] %>"><%= i %></a></li><% } %>
-		<% if (theme.rss){ %><li  class="mdl-menu__item"><a href="<%- theme.rss %>"  class="nav-icon" title="RSS Feed">RSS</a></li><% } %>
+		<% for (var i in theme.menu){ %><li  class="mdl-menu__item"><a href="<%- theme.menu[i] %>" style="color:#757575"><%= i %></a></li><% } %>
+		<% if (theme.rss){ %><li  class="mdl-menu__item"><a href="<%- theme.rss %>"
+			class="nav-icon" title="RSS Feed" style="color:#757575">RSS</a></li><% } %>
 	</ul>
 	<button id="menubtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
 		<i class="material-icons" role="presentation">menu</i>
@@ -9,10 +10,10 @@
 	</button>
 </div>
 <header id="header">
-	<nav>
-		<ul class="nav">
-			<% for (var i in theme.menu){ %><li><a href="<%- theme.menu[i] %>"><%= i %></a></li><% } %>
-			<% if (theme.rss){ %><li><a href="<%- theme.rss %>"  class="nav-icon" title="RSS Feed">RSS</a></li><% } %>
+	<nav class="nav">
+		<ul>
+			<% for (var i in theme.menu){ %><li><a href="<%- theme.menu[i] %>" style="color:#757575"><%= i %></a></li><% } %>
+			<% if (theme.rss){ %><li><a href="<%- theme.rss %>"  class="nav-icon" style="color:#757575" title="RSS Feed">RSS</a></li><% } %>
 		</ul>
 	</nav>
 </header>
