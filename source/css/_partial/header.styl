@@ -1,6 +1,6 @@
 #header
   display: block
-  margin: 3em 0
+  margin: 0
   position: relative
   *zoom: 1
   &:after
@@ -19,50 +19,29 @@
     display: inline-block
     width: 18px
     height: 17px
-    background: url('/images/icon-reorder@2x.png') no-repeat 0 0
     background-size: 18px 17px
 
 .nav
   position:relative
-  margin: 4em
+  padding-top: 10px
+  padding-bottom: 50px
   width: 100%
   a,
   label
-    color:#fff
     text-decoration:none
-    font: 1.0em sans-serif
+    font: 1.2em sans-serif
     transition:color .3s ease-in-out
 
   ul
-    padding: 10px
-    margin: 0 auto
+    padding-right: 5px
     width:100%
     list-style:none
 
     > li
       float:left
-      padding:.55em .55em
-      width:19%
-      background-image: url(../images/bg_header.png)
-      text-align:center
-      transition-duration: .3s
-      transition-timing-function: ease-in-out
-      transition-property: box-shadow, color
-      box-shadow:
-        0 .05em .25em 0 rgba(0, 0, 0, .35)
-
+      padding:.2em .2em
+      width:10%
       cursor: pointer
-
-      &:hover
-        background-color:rgba(0, 0, 0, .85)
-        color:#fff
-        box-shadow:
-          0 .05em .25em 0 rgba(0, 0, 0, .35),
-          inset 0 0 0 2em rgba(0, 0, 0, .3)
-
-
-        > a
-          color:#fff
 /* small screens */
 #nav
   ul
@@ -70,11 +49,12 @@
     height:100%
 
   label
+    margin-bottom: -200px
     position:relative
     display:block
     width:100%
     min-height:2.25em
-    padding:.45em
+    padding:.2em
     font-size:1.1em
     margin:0
     border: .15em solid rgba(60, 60, 60, .2)
@@ -110,59 +90,3 @@
 #nav-rss-link
   &:before
     content: "\f09e"
-
-#nav-search-btn
-  &:before
-    content: "\f002"
-
-#search-form-wrap
-  display: none
-  position: absolute
-  top: 10px
-  width: 150px
-  height: 30px
-  right: 280px
-  opacity: 0
-  transition: 0.2s ease-out
-  &.on
-    display: block
-    opacity: 1
-    right: 55px
-  @media (max-width:767px)
-    width: 100%
-    left: -100%
-
-.search-form
-  position: absolute
-  top: 0
-  left: 0
-  right: 0
-  background: #fff
-  padding: 3px 15px
-  border-radius: 15px
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
-
-.search-form-input
-  border: none
-  background: none
-  color: color-default
-  letter-spacing: 1px
-  width: 90%
-  font: 13px font-sans
-  outline: none
-  &::-webkit-search-results-decoration
-  &::-webkit-search-cancel-button
-    -webkit-appearance: none
-
-.search-form-submit
-  position: absolute
-  top: 50%
-  right: 10px
-  margin-top: -7px
-  font: 13px font-icon
-  border: none
-  background: none
-  color: #bbb
-  cursor: pointer
-  &:hover, &:focus
-    color: #777

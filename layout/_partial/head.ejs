@@ -20,6 +20,7 @@
   }
   %>
   <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+  <meta name="mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width">
   <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
   <% if (theme.rss){ %>
@@ -31,4 +32,7 @@
   <%- css('css/style') %>
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <%- partial('google-analytics') %>
+  <script type="text/javascript" src="/js/material.min.js"></script>
+  <link rel="stylesheet" href="/css/material.min.css" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
