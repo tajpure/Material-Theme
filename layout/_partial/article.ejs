@@ -6,7 +6,7 @@
 	<div class="mdl-card__title">
 		<%- partial('post/title', {class_name: 'article-title'}) %>
 	</div>
-	<div class="mdl-card__supporting-text">
+	<div class="mdl-card__supporting-text" style="margin-top: -1em">
 		<% if (post.excerpt && index){ %>
 			<%- post.excerpt %>
 			<% if (theme.excerpt_link){ %>
